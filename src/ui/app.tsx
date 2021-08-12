@@ -99,7 +99,7 @@ export function App() {
     }
 
     const CompiledContractArtifact = require(`../abi/ERC20.json`);
-    const SUDT_PROXY_CONTRACT_ADDRESS = "0xe9a2958B16DDa1602248CC2dCDC29109CCcc250d";
+    const SUDT_PROXY_CONTRACT_ADDRESS = "0x12Bc463413ed02704c4c255268d55AbeF2dB12B2";
 
     async function getSUDTBalance(account: string, web3: Web3, polyjuiceAddress:string) {
         console.log(polyjuiceAddress);
@@ -218,14 +218,14 @@ export function App() {
             Deploy transaction hash: <b>{deployTxHash || '-'}</b>
             <br />
             <br />
-            <h3>Transfer assets from the Ethereum blockchain via Force Bridge</h3>
+<!--             <h3>Transfer assets from the Ethereum blockchain via Force Bridge</h3>
             Your Layer 2 Deposit Address on Layer 1: <b>{layer2Address}</b><br /><br />
             Use the <a href="https://force-bridge-test.ckbapp.dev/bridge/Ethereum/Nervos">Force bridge website</a> to transfer tokens from Ethereum to Nervos layer 2.<br />
             Select the Ethereum asset and amount to transfer across the bridge. In the box marked "Recipient", you will specify the Nervos destination address for the funds: input your the Layer 2 Deposit Address on Layer 1 mentioned above.<br />
             When you have finished inputting and reviewing your selections, click the <i>Bridge</i> button. You will be asked to sign the transaction using MetaMask as seen below. There will be a small fee for the transfer, and this will be calculated automatically.<br />
             <br />
             Your SUDT balance: <b>{sudtBalance}</b><br />
-            <br />
+            <br /> -->
             <hr />
             <button onClick={deployContract} disabled={!l2Balance}>
                 Deploy contract
