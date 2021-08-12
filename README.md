@@ -1,2 +1,1 @@
-# nervos-create-nft
-dapp task7,8
+yarn && yarn build && yarn ui
